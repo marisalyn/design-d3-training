@@ -2,27 +2,27 @@
 
 **CONS**
 
-- Dual axes are generally a bad idea
+- Dual axes are generally a bad idea/can be confusing (although in some cases, I do think they're ok!)
 - Axes are poorly labeled (what is "product's values")
-- Colors might not be readable for someone who is color blind
+- Colors might not be readable for someone who is color blind (unsure of this)
 - Unclear what the goal of the figure is -- do we care more about comparing products or strategies? Maybe we need more than one figure to highlight key points
-- Line charts imply time series, but strategies likely aren't time series 
+- Line charts imply time series, but strategies may not be time series
 
 **PROS** 
 
-- Could be ok as an exploratory figure, e.g. we make this to help us visualize if there are any trends across products/strategies and then we make a clearer figure highlighting any trends
+- Could be ok as an exploratory figure, e.g. we make this to help us visualize if there are any trends across products/strategies and then we make a cleaner figure highlighting any trends
 
 - Helps visualize relative scale of product values within strategies 
 
 **UPDATED VISUALIZATION DESCRIPTION** 
 
-In my visualization, I assumed the figure was trying to highlight the impact of strategies on the profits of a single product, product A. The figure is a stacked bar chart of the profits for product A & total profit from other products across strategies. I also added a baseline period for context. This obviously loses information about the other products, but depending on the context that may make the most sense. 
+In my visualization, I assumed the figure was trying to highlight the impact of strategies on the profits of a single product, product A. The figure is a stacked bar chart of the profits for product A & total profit from other products across strategies. I also added a baseline period for context. This obviously loses information about changes in profits of the other products across strategies, but depending on the context that may make the most sense.
 
 # Visualization 2
 
 **CONS**
 
-- Everything???
+- Everything??? 
 - Way too much happening in one figure; unclear what the point of the figure is
 - Unclear what the percentage labels mean and why some are boxed while others aren't
 - Way too many colors
@@ -51,4 +51,4 @@ I assumed the percentages were percent changes over time. I also assumed we were
 
 **UPDATED VISUALIZATION DESCRIPTION** 
 
-I decided to display the percentages in a series of waffle charts. This highlights the "percent of a total" that each of the percentages represent and allows us to assign a size for each square of the waffle, addressing the question of sample size. We could also add a note/caption to the figure about the survey population.
+I decided to display the percentages in a series of waffle charts. This highlights that each value is a percentage of a total and allows us to assign a size for each square of the waffle, addressing the question of sample size. We could also add a note/caption to the figure about the survey population.
