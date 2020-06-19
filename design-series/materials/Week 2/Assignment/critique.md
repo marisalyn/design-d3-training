@@ -17,6 +17,10 @@
 - not sure who the intended audience is or what th e"platform average" is?
 - I'd like to know the total number of unique users in addition to if they return
 
+## mockup
+
+In my mockup, I created bars for the New Orleans Saints regular vs off season and represented the platform average for each of these bars with a star symbol. I also changed the y-axis to the absolute number of visitors, since it would be useful to know if your site was hitting the average number of visitors as the platform average.
+
 # gapminder
 
 I'm a big fan of gapminder mostly because I really like Hans Rosling -- he has a great TED talk that incorporates gapminder :) 
