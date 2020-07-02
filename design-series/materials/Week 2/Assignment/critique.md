@@ -3,7 +3,7 @@
 ## pros
 
 - I like that they've labeled the percentages
-- creative attempt putting the bars on a football field
+- creative attempt putting the bars on a football field (but it makes the chart harder to read)
 - I like the idea of the offseason vs regular season 
 - I like the title and subtitle
 
@@ -14,12 +14,8 @@
 	- blue vs black/grey
 	- green field background
 	- white text on lighter colors
-- not sure who the intended audience is or what th e"platform average" is?
+- not sure who the intended audience is or what the "platform average" is?
 - I'd like to know the total number of unique users in addition to if they return
-
-## mockup
-
-In my mockup, I created bars for the New Orleans Saints regular vs off season and represented the platform average for each of these bars with a star symbol. I also changed the y-axis to the absolute number of visitors, since it would be useful to know if your site was hitting the average number of visitors as the platform average.
 
 # gapminder
 
