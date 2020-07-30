@@ -1,3 +1,4 @@
+
 function buildChart(containerId) {
     // read in our data
    d3.csv('data/NSRDB_StationsMeta.csv', function(error, data){
@@ -65,17 +66,15 @@ function buildChart(containerId) {
                .style("stroke-width", 2);
          
             // add points
+            var minElev = Math.floor(d3.min(data, function(d) { return d.elev; })/100)*100
+            var meanElev = Math.ceil(d3.mean(data, function(d) { return d.elev; })/100)*100
+            var maxElev = Math.ceil(d3.max(data, function(d) { return d.elev; })/100)*100
+
             var scale = d3.scaleLinear()
-                .domain([ 
-                    d3.min(data, function(d) {
-                        return d.elev;
-                    }), 
-                    d3.max(data, function(d) {
-                        return d.elev;
-                    }) ])
+                .domain([minElev, maxElev])
                 .range([ 0, 20]);
 
-            var map = g.selectAll("circle")
+            g.selectAll("circle")
                .data(data)
                .enter()
                .append("circle")
@@ -101,8 +100,30 @@ function buildChart(containerId) {
                })
                .style("stroke", "black")
 
+            // add legend using d3-legend module legendSize
+            g.append("g")
+                .attr("class", "legendSize")
+                .style("fill", "#FFC145")
+                .style("stroke", "black")
+		        .attr("transform", "translate("+innerWidth/2+", "+(innerHeight-30)+")");             
+
+		    var legendSize = d3.legendSize()
+		      .scale(scale)
+		      .shape('circle')
+		      .shapePadding(50)
+              .labelOffset(20)
+              .cells(3) // min is so small it doesn't show up! :(
+              .labels([minElev,meanElev,maxElev])
+              .title("Station Elevation (m)")
+		      .orient('horizontal');
+    
+		    g.select(".legendSize")
+		      .call(legendSize);
+                         
         });
     });    
 }
+
+
 
 buildChart('#solar-stations');
